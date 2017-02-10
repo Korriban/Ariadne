@@ -15,6 +15,7 @@
 		AA03D4FA1E4E57D9003BB9F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA03D4F91E4E57D9003BB9F6 /* Assets.xcassets */; };
 		AA03D4FD1E4E57D9003BB9F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA03D4FB1E4E57D9003BB9F6 /* Main.storyboard */; };
 		AA03D5051E4E6AD3003BB9F6 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = AA03D5041E4E6AD3003BB9F6 /* .gitignore */; };
+		AA03D5071E4E6DB0003BB9F6 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = AA03D5061E4E6DB0003BB9F6 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		AA03D4FC1E4E57D9003BB9F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AA03D4FE1E4E57D9003BB9F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA03D5041E4E6AD3003BB9F6 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		AA03D5061E4E6DB0003BB9F6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +46,7 @@
 		AA03D4E31E4E57D9003BB9F6 = {
 			isa = PBXGroup;
 			children = (
+				AA03D5061E4E6DB0003BB9F6 /* README.md */,
 				AA03D5041E4E6AD3003BB9F6 /* .gitignore */,
 				AA03D4EE1E4E57D9003BB9F6 /* Ariadne */,
 				AA03D4ED1E4E57D9003BB9F6 /* Products */,
@@ -150,6 +153,7 @@
 			files = (
 				AA03D4F81E4E57D9003BB9F6 /* ViewController.swift in Sources */,
 				AA03D4F61E4E57D9003BB9F6 /* GameScene.swift in Sources */,
+				AA03D5071E4E6DB0003BB9F6 /* README.md in Sources */,
 				AA03D4F01E4E57D9003BB9F6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
