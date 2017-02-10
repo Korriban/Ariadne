@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		AA03D4F01E4E57D9003BB9F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA03D4EF1E4E57D9003BB9F6 /* AppDelegate.swift */; };
 		AA03D4F21E4E57D9003BB9F6 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = AA03D4F11E4E57D9003BB9F6 /* GameScene.sks */; };
-		AA03D4F41E4E57D9003BB9F6 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = AA03D4F31E4E57D9003BB9F6 /* Actions.sks */; };
 		AA03D4F61E4E57D9003BB9F6 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA03D4F51E4E57D9003BB9F6 /* GameScene.swift */; };
 		AA03D4F81E4E57D9003BB9F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA03D4F71E4E57D9003BB9F6 /* ViewController.swift */; };
 		AA03D4FA1E4E57D9003BB9F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA03D4F91E4E57D9003BB9F6 /* Assets.xcassets */; };
@@ -22,7 +21,6 @@
 		AA03D4EC1E4E57D9003BB9F6 /* Ariadne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ariadne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA03D4EF1E4E57D9003BB9F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA03D4F11E4E57D9003BB9F6 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		AA03D4F31E4E57D9003BB9F6 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		AA03D4F51E4E57D9003BB9F6 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		AA03D4F71E4E57D9003BB9F6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AA03D4F91E4E57D9003BB9F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -66,7 +64,6 @@
 			children = (
 				AA03D4EF1E4E57D9003BB9F6 /* AppDelegate.swift */,
 				AA03D4F11E4E57D9003BB9F6 /* GameScene.sks */,
-				AA03D4F31E4E57D9003BB9F6 /* Actions.sks */,
 				AA03D4F51E4E57D9003BB9F6 /* GameScene.swift */,
 				AA03D4F71E4E57D9003BB9F6 /* ViewController.swift */,
 				AA03D4F91E4E57D9003BB9F6 /* Assets.xcassets */,
@@ -139,7 +136,6 @@
 				AA03D5051E4E6AD3003BB9F6 /* .gitignore in Resources */,
 				AA03D4F21E4E57D9003BB9F6 /* GameScene.sks in Resources */,
 				AA03D4FA1E4E57D9003BB9F6 /* Assets.xcassets in Resources */,
-				AA03D4F41E4E57D9003BB9F6 /* Actions.sks in Resources */,
 				AA03D4FD1E4E57D9003BB9F6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

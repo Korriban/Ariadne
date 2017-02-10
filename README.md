@@ -5,3 +5,4 @@ My intention is to program a fun filled, dynamic and vibrant combat system so it
 
 ### License: none
 ### Thus, the code is private intellectual property. 
+### Art: GPL3 and CC-BY-SA3
