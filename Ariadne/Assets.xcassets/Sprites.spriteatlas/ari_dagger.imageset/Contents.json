@@ -1,6 +1,20 @@
 {
   "images" : [
     {
+      "resizing" : {
+        "mode" : "9-part",
+        "center" : {
+          "mode" : "tile",
+          "width" : 32,
+          "height" : 64
+        },
+        "cap-insets" : {
+          "bottom" : 609,
+          "top" : 671,
+          "right" : 385,
+          "left" : 415
+        }
+      },
       "idiom" : "universal",
       "filename" : "ari_dagger.png",
       "scale" : "1x"
