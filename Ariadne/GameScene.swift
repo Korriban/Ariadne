@@ -13,7 +13,9 @@ class GameScene: SKScene {
     
     
     override func didMove(to view: SKView) {
-
+        let sheet = SpriteSheet(texture: SKTexture(imageNamed: "ari_dagger"), rows: 25, columns: 13)
+        let sprite = SKSpriteNode(texture: sheet.getTextureAt(column: 0, row: 0))
+        self.addChild(sprite)
     }
     
     

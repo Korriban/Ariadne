@@ -14,7 +14,7 @@
 		AA03D4FA1E4E57D9003BB9F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA03D4F91E4E57D9003BB9F6 /* Assets.xcassets */; };
 		AA03D4FD1E4E57D9003BB9F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA03D4FB1E4E57D9003BB9F6 /* Main.storyboard */; };
 		AA03D5051E4E6AD3003BB9F6 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = AA03D5041E4E6AD3003BB9F6 /* .gitignore */; };
-		AA03D5071E4E6DB0003BB9F6 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = AA03D5061E4E6DB0003BB9F6 /* README.md */; };
+		AA30BD981E500BE10041143A /* SpriteSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA30BD971E500BE10041143A /* SpriteSheet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +28,7 @@
 		AA03D4FE1E4E57D9003BB9F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA03D5041E4E6AD3003BB9F6 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		AA03D5061E4E6DB0003BB9F6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		AA30BD971E500BE10041143A /* SpriteSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpriteSheet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +70,7 @@
 				AA03D4F91E4E57D9003BB9F6 /* Assets.xcassets */,
 				AA03D4FB1E4E57D9003BB9F6 /* Main.storyboard */,
 				AA03D4FE1E4E57D9003BB9F6 /* Info.plist */,
+				AA30BD971E500BE10041143A /* SpriteSheet.swift */,
 			);
 			path = Ariadne;
 			sourceTree = "<group>";
@@ -147,9 +149,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA30BD981E500BE10041143A /* SpriteSheet.swift in Sources */,
 				AA03D4F81E4E57D9003BB9F6 /* ViewController.swift in Sources */,
 				AA03D4F61E4E57D9003BB9F6 /* GameScene.swift in Sources */,
-				AA03D5071E4E6DB0003BB9F6 /* README.md in Sources */,
 				AA03D4F01E4E57D9003BB9F6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,6 +309,7 @@
 				AA03D5031E4E57D9003BB9F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
