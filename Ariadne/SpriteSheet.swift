@@ -9,7 +9,7 @@
 import SpriteKit
 
 class SpriteSheet {
-    let texture: SKTexture
+    let texture: SKTexture!
     let rows: Int
     let columns: Int
     var margin: CGFloat=0

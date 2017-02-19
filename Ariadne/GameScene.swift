@@ -11,11 +11,9 @@ import GameplayKit
 
 class GameScene: SKScene {
     
-    
     override func didMove(to view: SKView) {
-        let sheet = SpriteSheet(texture: SKTexture(imageNamed: "ari_dagger"), rows: 25, columns: 13)
-        let sprite = SKSpriteNode(texture: sheet.getTextureAt(column: 0, row: 0))
-        self.addChild(sprite)
+        //let player : Player = Player(sheet: SpriteSheet(texture: SKTexture(imageNamed: "ari_dagger"), rows: 25, columns: 13))
+        //self.addChild( )
     }
     
     
@@ -45,7 +43,9 @@ class GameScene: SKScene {
     
     override func keyDown(with event: NSEvent) {
         switch event.keyCode {
-        case 123: break //left
+        case 123:
+            self.childNode(withName: "player")?.position.x.subtract(1)
+            break //left
         case 124: break //right
         case 125: break //down
         case 126: break //up
