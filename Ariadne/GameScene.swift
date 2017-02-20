@@ -10,10 +10,12 @@ import SpriteKit
 import GameplayKit
 
 class GameScene: SKScene {
+    var player : Player? = nil
     
     override func didMove(to view: SKView) {
-        //let player : Player = Player(sheet: SpriteSheet(texture: SKTexture(imageNamed: "ari_dagger"), rows: 25, columns: 13))
-        //self.addChild( )
+        let ariTexture = SKTexture(imageNamed: "ari_dagger")
+        player = Player(texture: ariTexture, color: SKColor.white, size: ariTexture.size())
+        self.addChild(player!)
     }
     
     
