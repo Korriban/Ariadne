@@ -16,6 +16,7 @@
 		AA30BD981E500BE10041143A /* SpriteSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA30BD971E500BE10041143A /* SpriteSheet.swift */; };
 		AA5022B61E5A48130038D877 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5022B51E5A48130038D877 /* Entity.swift */; };
 		AA590E9B1E511046004711FC /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA590E9A1E511046004711FC /* Player.swift */; };
+		AA70E9161E5BA31D0097A6DE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA70E9151E5BA31D0097A6DE /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		AA5022B51E5A48130038D877 /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
 		AA5022B71E5A6DB00038D877 /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		AA590E9A1E511046004711FC /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		AA70E9151E5BA31D0097A6DE /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 		AA70E9131E5BA2970097A6DE /* support */ = {
 			isa = PBXGroup;
 			children = (
+				AA70E9151E5BA31D0097A6DE /* Constants.swift */,
 				AA03D4FB1E4E57D9003BB9F6 /* Main.storyboard */,
 				AA03D4FE1E4E57D9003BB9F6 /* Info.plist */,
 				AA03D4F91E4E57D9003BB9F6 /* Assets.xcassets */,
@@ -197,6 +200,7 @@
 				AA03D4F81E4E57D9003BB9F6 /* ViewController.swift in Sources */,
 				AA5022B61E5A48130038D877 /* Entity.swift in Sources */,
 				AA03D4F61E4E57D9003BB9F6 /* GameScene.swift in Sources */,
+				AA70E9161E5BA31D0097A6DE /* Constants.swift in Sources */,
 				AA590E9B1E511046004711FC /* Player.swift in Sources */,
 				AA03D4F01E4E57D9003BB9F6 /* AppDelegate.swift in Sources */,
 			);
