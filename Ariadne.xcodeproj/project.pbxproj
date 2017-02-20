@@ -32,6 +32,7 @@
 		AA03D5061E4E6DB0003BB9F6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		AA30BD971E500BE10041143A /* SpriteSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpriteSheet.swift; sourceTree = "<group>"; };
 		AA5022B51E5A48130038D877 /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		AA5022B71E5A6DB00038D877 /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		AA590E9A1E511046004711FC /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -50,6 +51,7 @@
 			isa = PBXGroup;
 			children = (
 				AA03D5061E4E6DB0003BB9F6 /* README.md */,
+				AA5022B71E5A6DB00038D877 /* LICENSE.txt */,
 				AA03D5041E4E6AD3003BB9F6 /* .gitignore */,
 				AA03D4EE1E4E57D9003BB9F6 /* Ariadne */,
 				AA03D4ED1E4E57D9003BB9F6 /* Products */,
