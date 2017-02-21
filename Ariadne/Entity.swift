@@ -14,6 +14,7 @@ class Entity : SKSpriteNode {
     
     var sheet : SpriteSheet?
     
+    
     override init(texture: SKTexture?, color: NSColor, size: CGSize) {
         sheet = SpriteSheet(texture: texture!, rows: self.rows, columns: self.columns)
         super.init(texture: texture, color: color, size: size)

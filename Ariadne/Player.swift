@@ -8,9 +8,16 @@
 
 import SpriteKit
 
-class Player : Entity {
+class Player : Mob {
     let maxHealth : CFloat = 100.0
     var health : CFloat = 0.0
     
+    override init(texture: SKTexture?, color: NSColor, size: CGSize) {
+        super.init(texture: texture, color: color, size: size)
+        
+    }
     
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
 }
