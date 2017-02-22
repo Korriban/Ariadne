@@ -12,6 +12,7 @@ import GameplayKit
 class GameScene: SKScene {
     var player : Player? = nil
     
+    
     override func didMove(to view: SKView) {
         let ariTexture = SKTexture(imageNamed: "ari_dagger")
         player = Player(texture: ariTexture, color: SKColor.white, size: ariTexture.size())

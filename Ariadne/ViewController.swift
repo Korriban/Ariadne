@@ -16,16 +16,15 @@ class ViewController: NSViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let sceneNode = GameScene(size: self.view.frame.size)
         self.view.window?.makeMain()
         if let view = self.skView {
-            // Load the SKScene from 'GameScene.sks'
-            if let scene = SKScene(fileNamed: "GameScene") {
-                // Set the scale mode to scale to fit the window
-                scene.scaleMode = .aspectFill
+            // Set the scale mode to scale to fit the window
+            sceneNode.scaleMode = .aspectFill
                 
-                // Present the scene
-                view.presentScene(scene)
-            }
+            // Present the scene
+            view.presentScene(sceneNode)
+            
             
             view.ignoresSiblingOrder = true
             

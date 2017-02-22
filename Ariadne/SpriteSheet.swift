@@ -14,12 +14,13 @@ class SpriteSheet {
     let columns: Int
     var margin: CGFloat=0
     var spacing: CGFloat=0
-    var frameSize: CGSize{
+    var frameSize: CGSize {
         let tSize: CGSize=self.texture.size()
         let ww: CGFloat=tSize.width-(self.margin*2+self.spacing*CGFloat(self.columns-1))
         let hh: CGFloat=tSize.height-(self.margin*2+self.spacing*CGFloat(self.rows-1))
         return CGSize(width: ww / CGFloat(self.columns), height: hh / CGFloat(self.rows))
     }
+    private var textures = [SKTexture]()
     
     init(texture: SKTexture, rows: Int, columns: Int, spacing: CGFloat, margin: CGFloat) {
         self.texture = texture
@@ -33,7 +34,7 @@ class SpriteSheet {
         self.init(texture: texture, rows: rows, columns: columns, spacing: 0, margin: 0)
     }
     
-    func getTextureAt(column: Int, row: Int)->SKTexture? {
+    private func getTextureAt(column: Int, row: Int)->SKTexture? {
         if !(0...self.rows ~= row && 0...self.columns ~= column) {
             //out of bounds
             return nil
@@ -48,5 +49,9 @@ class SpriteSheet {
                            width: textureRect.size.width / self.texture.size().width,
                            height: textureRect.size.height / self.texture.size().height)
         return SKTexture(rect: textureRect, in: self.texture)
+    }
+    
+    public func getTexture(column: Int, row: Int) -> SKTexture? {
+        return self.textures[column + row * self.columns]
     }
 }
