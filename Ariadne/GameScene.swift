@@ -10,20 +10,15 @@ import SpriteKit
 import GameplayKit
 
 class GameScene: SKScene {
-    var players = [Player]()
+    var player : Player!
     
     
     override func didMove(to view: SKView) {
         Art.initFrames()
-        var player : Player
-        for y in 0..<Int(view.frame.size.height / 64) {
-            for x in 0..<Int(view.frame.size.width / 32) {
-                player = Player(sheet: Art.ariBowSheet)
-                player.position = CGPoint(x: x*32+16, y: Int(view.frame.size.height)-64*y-32)
-                self.addChild(player)
-                players.append(player)
-            }
-        }
+        let animSet : AnimationSet = AnimationSet()
+        player = Player(animationSet: animSet)
+        player.position = CGPoint(x: (view.scene?.size.width)! / 2, y: (view.scene?.size.height)! / 2)
+        self.addChild(player)
     }
     
     
@@ -54,9 +49,9 @@ class GameScene: SKScene {
     override func keyDown(with event: NSEvent) {
         switch event.keyCode {
         case 123:
-            self.childNode(withName: "player")?.position.x.subtract(1)
             break //left
-        case 124: break //right
+        case 124:
+            break //right
         case 125: break //down
         case 126: break //up
         case 49: break  //space
@@ -67,8 +62,6 @@ class GameScene: SKScene {
     
     
     override func update(_ currentTime: TimeInterval) {
-        for player in players {
-            player.update(deltaTime: currentTime)
-        }
+        player.update(deltaTime: currentTime)
     }
 }
