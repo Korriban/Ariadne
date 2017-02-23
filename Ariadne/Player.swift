@@ -20,4 +20,15 @@ class Player : Mob {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
+    
+    override func update(deltaTime: TimeInterval) {
+        if action(forKey: (Art.frames[animation]?.0)!) == nil {
+            let walkingAction = SKAction.repeatForever(
+                SKAction.animate(with: (Art.frames[animation]?.1)!,
+                                 timePerFrame: 0.04,
+                                 resize: false,
+                                 restore: true))
+            run(walkingAction, withKey:(Art.frames[animation]?.0)!)
+        }
+    }
 }

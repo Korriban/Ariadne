@@ -21,7 +21,7 @@ class ViewController: NSViewController {
         if let view = self.skView {
             // Set the scale mode to scale to fit the window
             sceneNode.scaleMode = .aspectFill
-                
+            //sceneNode.size = skView.bounds.size
             // Present the scene
             view.presentScene(sceneNode)
             

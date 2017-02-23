@@ -10,13 +10,20 @@ import SpriteKit
 import GameplayKit
 
 class GameScene: SKScene {
-    var player : Player? = nil
+    var players = [Player]()
     
     
     override func didMove(to view: SKView) {
-        let ariTexture = SKTexture(imageNamed: "ari_dagger")
-        player = Player(texture: ariTexture, color: SKColor.white, size: ariTexture.size())
-        self.addChild(player!)
+        Art.initFrames()
+        var player : Player
+        for y in 0..<Int(view.frame.size.height / 64) {
+            for x in 0..<Int(view.frame.size.width / 32) {
+                player = Player(sheet: Art.ariBowSheet)
+                player.position = CGPoint(x: x*32+16, y: Int(view.frame.size.height)-64*y-32)
+                self.addChild(player)
+                players.append(player)
+            }
+        }
     }
     
     
@@ -60,6 +67,8 @@ class GameScene: SKScene {
     
     
     override func update(_ currentTime: TimeInterval) {
-        // Called before each frame is rendered
+        for player in players {
+            player.update(deltaTime: currentTime)
+        }
     }
 }

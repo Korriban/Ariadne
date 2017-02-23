@@ -9,6 +9,7 @@
 import SpriteKit
 
 class SpriteSheet {
+
     let texture: SKTexture!
     let rows: Int
     let columns: Int
@@ -20,6 +21,7 @@ class SpriteSheet {
         let hh: CGFloat=tSize.height-(self.margin*2+self.spacing*CGFloat(self.rows-1))
         return CGSize(width: ww / CGFloat(self.columns), height: hh / CGFloat(self.rows))
     }
+    
     private var textures = [SKTexture]()
     
     init(texture: SKTexture, rows: Int, columns: Int, spacing: CGFloat, margin: CGFloat) {
@@ -28,6 +30,12 @@ class SpriteSheet {
         self.columns = columns
         self.margin = margin
         self.spacing = spacing
+        
+        for y in 0..<rows {
+            for x in 0..<columns {
+                textures.append(getTextureAt(column: x, row: y)!)
+            }
+        }
     }
     
     convenience init(texture: SKTexture, rows: Int, columns: Int) {
