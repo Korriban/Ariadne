@@ -13,10 +13,12 @@
 		AA03D4FA1E4E57D9003BB9F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA03D4F91E4E57D9003BB9F6 /* Assets.xcassets */; };
 		AA03D4FD1E4E57D9003BB9F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA03D4FB1E4E57D9003BB9F6 /* Main.storyboard */; };
 		AA03D5051E4E6AD3003BB9F6 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = AA03D5041E4E6AD3003BB9F6 /* .gitignore */; };
+		AA1A142D1E6625D000E376E6 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1A142C1E6625D000E376E6 /* Animation.swift */; };
+		AA1A142F1E66726F00E376E6 /* AnimationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1A142E1E66726F00E376E6 /* AnimationHandler.swift */; };
+		AA1A14321E66897C00E376E6 /* InputHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1A14311E66897C00E376E6 /* InputHandler.swift */; };
 		AA30BD981E500BE10041143A /* SpriteSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA30BD971E500BE10041143A /* SpriteSheet.swift */; };
 		AA44EDF01E5E8A1C0086619A /* Art.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA44EDEF1E5E8A1C0086619A /* Art.swift */; };
 		AA5022B61E5A48130038D877 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5022B51E5A48130038D877 /* Entity.swift */; };
-		AA532BFF1E5F5B7B00AA8C9A /* AnimationSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA532BFE1E5F5B7B00AA8C9A /* AnimationSet.swift */; };
 		AA590E9B1E511046004711FC /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA590E9A1E511046004711FC /* Player.swift */; };
 		AA70E9161E5BA31D0097A6DE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA70E9151E5BA31D0097A6DE /* Constants.swift */; };
 		AAB61D141E5CFAA5000E38E4 /* Mob.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB61D131E5CFAA5000E38E4 /* Mob.swift */; };
@@ -32,11 +34,13 @@
 		AA03D4FE1E4E57D9003BB9F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA03D5041E4E6AD3003BB9F6 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		AA03D5061E4E6DB0003BB9F6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		AA1A142C1E6625D000E376E6 /* Animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
+		AA1A142E1E66726F00E376E6 /* AnimationHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationHandler.swift; sourceTree = "<group>"; };
+		AA1A14311E66897C00E376E6 /* InputHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputHandler.swift; sourceTree = "<group>"; };
 		AA30BD971E500BE10041143A /* SpriteSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpriteSheet.swift; sourceTree = "<group>"; };
 		AA44EDEF1E5E8A1C0086619A /* Art.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Art.swift; sourceTree = "<group>"; };
 		AA5022B51E5A48130038D877 /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
 		AA5022B71E5A6DB00038D877 /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
-		AA532BFE1E5F5B7B00AA8C9A /* AnimationSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationSet.swift; sourceTree = "<group>"; };
 		AA590E9A1E511046004711FC /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		AA70E9151E5BA31D0097A6DE /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		AAB61D131E5CFAA5000E38E4 /* Mob.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mob.swift; sourceTree = "<group>"; };
@@ -76,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				AA03D4EF1E4E57D9003BB9F6 /* AppDelegate.swift */,
+				AA1A14301E66896F00E376E6 /* input */,
 				AA70E9141E5BA2C90097A6DE /* gfx */,
 				AA70E9121E5BA28D0097A6DE /* controllers */,
 				AA70E9111E5BA27A0097A6DE /* scenes */,
@@ -83,6 +88,14 @@
 				AA70E9131E5BA2970097A6DE /* support */,
 			);
 			path = Ariadne;
+			sourceTree = "<group>";
+		};
+		AA1A14301E66896F00E376E6 /* input */ = {
+			isa = PBXGroup;
+			children = (
+				AA1A14311E66897C00E376E6 /* InputHandler.swift */,
+			);
+			name = input;
 			sourceTree = "<group>";
 		};
 		AA70E9111E5BA27A0097A6DE /* scenes */ = {
@@ -117,7 +130,8 @@
 			children = (
 				AA44EDEF1E5E8A1C0086619A /* Art.swift */,
 				AA30BD971E500BE10041143A /* SpriteSheet.swift */,
-				AA532BFE1E5F5B7B00AA8C9A /* AnimationSet.swift */,
+				AA1A142C1E6625D000E376E6 /* Animation.swift */,
+				AA1A142E1E66726F00E376E6 /* AnimationHandler.swift */,
 			);
 			name = gfx;
 			sourceTree = "<group>";
@@ -205,15 +219,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA1A142D1E6625D000E376E6 /* Animation.swift in Sources */,
 				AA30BD981E500BE10041143A /* SpriteSheet.swift in Sources */,
 				AA03D4F81E4E57D9003BB9F6 /* ViewController.swift in Sources */,
+				AA1A142F1E66726F00E376E6 /* AnimationHandler.swift in Sources */,
 				AA44EDF01E5E8A1C0086619A /* Art.swift in Sources */,
 				AAB61D141E5CFAA5000E38E4 /* Mob.swift in Sources */,
 				AA5022B61E5A48130038D877 /* Entity.swift in Sources */,
+				AA1A14321E66897C00E376E6 /* InputHandler.swift in Sources */,
 				AA03D4F61E4E57D9003BB9F6 /* GameScene.swift in Sources */,
 				AA70E9161E5BA31D0097A6DE /* Constants.swift in Sources */,
 				AA590E9B1E511046004711FC /* Player.swift in Sources */,
-				AA532BFF1E5F5B7B00AA8C9A /* AnimationSet.swift in Sources */,
 				AA03D4F01E4E57D9003BB9F6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

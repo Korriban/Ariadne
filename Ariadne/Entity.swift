@@ -9,15 +9,21 @@
 import SpriteKit
 
 class Entity : SKSpriteNode {
-    var animationSet : AnimationSet!
+    var animationHandler : AnimationHandler!
+    var input : InputHandler!
+    
+    //acceleration
+    var xa : CGFloat = 0.0
+    var ya : CGFloat = 0.0
 
     override init(texture: SKTexture?, color: NSColor, size: CGSize) {
         super.init(texture: texture, color: color, size: size)
     }
     
-    convenience init(animationSet: AnimationSet) {
+    convenience init(animationHandler: AnimationHandler, inputHandler : InputHandler) {
         self.init(texture: nil, color: SKColor.white, size: Art.spriteSize())
-        self.animationSet = animationSet
+        self.input = inputHandler
+        self.animationHandler = animationHandler;
     }
     
     required init?(coder aDecoder: NSCoder) {

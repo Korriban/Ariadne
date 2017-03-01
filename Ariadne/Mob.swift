@@ -9,10 +9,6 @@
 import SpriteKit
 
 class Mob : Entity {
-    struct animations {
-        
-    }
-    
     override init(texture: SKTexture?, color: NSColor, size: CGSize) {
         super.init(texture: texture, color: color, size: size)
     }

@@ -7,16 +7,15 @@
 //
 
 import SpriteKit
-import GameplayKit
 
 class GameScene: SKScene {
+    var input : InputHandler!
     var player : Player!
     
     
     override func didMove(to view: SKView) {
-        Art.initFrames()
-        let animSet : AnimationSet = AnimationSet()
-        player = Player(animationSet: animSet)
+        input = InputHandler(gameScene: self)
+        player = Player(animationHandler: Art.playerAnimations, inputHandler: self.input)
         player.position = CGPoint(x: (view.scene?.size.width)! / 2, y: (view.scene?.size.height)! / 2)
         self.addChild(player)
     }
@@ -47,19 +46,12 @@ class GameScene: SKScene {
     }
     
     override func keyDown(with event: NSEvent) {
-        switch event.keyCode {
-        case 123:
-            break //left
-        case 124:
-            break //right
-        case 125: break //down
-        case 126: break //up
-        case 49: break  //space
-        default:
-            print("keyDown: \(event.characters!) keyCode: \(event.keyCode)")
-        }
+        input.keyDown(with: event)
     }
     
+    override func keyUp(with event: NSEvent) {
+        input.keyUp(with: event)
+    }
     
     override func update(_ currentTime: TimeInterval) {
         player.update(deltaTime: currentTime)
