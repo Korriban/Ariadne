@@ -16,6 +16,9 @@
 		AA1A142D1E6625D000E376E6 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1A142C1E6625D000E376E6 /* Animation.swift */; };
 		AA1A142F1E66726F00E376E6 /* AnimationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1A142E1E66726F00E376E6 /* AnimationHandler.swift */; };
 		AA1A14321E66897C00E376E6 /* InputHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1A14311E66897C00E376E6 /* InputHandler.swift */; };
+		AA2063C21E69223A0083A667 /* easing.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2063BF1E69223A0083A667 /* easing.swift */; };
+		AA2063C31E69223A0083A667 /* EasingDeclarations.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2063C01E69223A0083A667 /* EasingDeclarations.swift */; };
+		AA2063C41E69223A0083A667 /* SKEase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2063C11E69223A0083A667 /* SKEase.swift */; };
 		AA30BD981E500BE10041143A /* SpriteSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA30BD971E500BE10041143A /* SpriteSheet.swift */; };
 		AA44EDF01E5E8A1C0086619A /* Art.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA44EDEF1E5E8A1C0086619A /* Art.swift */; };
 		AA5022B61E5A48130038D877 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5022B51E5A48130038D877 /* Entity.swift */; };
@@ -37,6 +40,9 @@
 		AA1A142C1E6625D000E376E6 /* Animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
 		AA1A142E1E66726F00E376E6 /* AnimationHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationHandler.swift; sourceTree = "<group>"; };
 		AA1A14311E66897C00E376E6 /* InputHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputHandler.swift; sourceTree = "<group>"; };
+		AA2063BF1E69223A0083A667 /* easing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = easing.swift; sourceTree = "<group>"; };
+		AA2063C01E69223A0083A667 /* EasingDeclarations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasingDeclarations.swift; sourceTree = "<group>"; };
+		AA2063C11E69223A0083A667 /* SKEase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKEase.swift; sourceTree = "<group>"; };
 		AA30BD971E500BE10041143A /* SpriteSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpriteSheet.swift; sourceTree = "<group>"; };
 		AA44EDEF1E5E8A1C0086619A /* Art.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Art.swift; sourceTree = "<group>"; };
 		AA5022B51E5A48130038D877 /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
@@ -117,6 +123,9 @@
 		AA70E9131E5BA2970097A6DE /* support */ = {
 			isa = PBXGroup;
 			children = (
+				AA2063BF1E69223A0083A667 /* easing.swift */,
+				AA2063C01E69223A0083A667 /* EasingDeclarations.swift */,
+				AA2063C11E69223A0083A667 /* SKEase.swift */,
 				AA70E9151E5BA31D0097A6DE /* Constants.swift */,
 				AA03D4FB1E4E57D9003BB9F6 /* Main.storyboard */,
 				AA03D4FE1E4E57D9003BB9F6 /* Info.plist */,
@@ -225,9 +234,12 @@
 				AA1A142F1E66726F00E376E6 /* AnimationHandler.swift in Sources */,
 				AA44EDF01E5E8A1C0086619A /* Art.swift in Sources */,
 				AAB61D141E5CFAA5000E38E4 /* Mob.swift in Sources */,
+				AA2063C41E69223A0083A667 /* SKEase.swift in Sources */,
 				AA5022B61E5A48130038D877 /* Entity.swift in Sources */,
 				AA1A14321E66897C00E376E6 /* InputHandler.swift in Sources */,
 				AA03D4F61E4E57D9003BB9F6 /* GameScene.swift in Sources */,
+				AA2063C31E69223A0083A667 /* EasingDeclarations.swift in Sources */,
+				AA2063C21E69223A0083A667 /* easing.swift in Sources */,
 				AA70E9161E5BA31D0097A6DE /* Constants.swift in Sources */,
 				AA590E9B1E511046004711FC /* Player.swift in Sources */,
 				AA03D4F01E4E57D9003BB9F6 /* AppDelegate.swift in Sources */,

@@ -61,15 +61,15 @@ class Player : Mob {
             
             
             if action(forKey: anim.key) == nil {
-                let walkingAction = SKAction.repeat(
-                    SKAction.animate(with: anim.textures,
-                                     timePerFrame: TimeInterval(anim.timePerFrame),
-                                     resize: false,
-                                     restore: true), count: 1)
+                let walkingAction = anim.animation
                 
-                run(walkingAction, withKey:anim.key)
+                run(walkingAction!, withKey:anim.key)
             }
         } else {
+            if self.hasActions() {
+                self.removeAllActions()
+            }
+            
             self.texture = anim.textures[0]
         }
     }

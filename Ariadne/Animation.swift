@@ -33,6 +33,10 @@ class Animation : CustomStringConvertible {
             }
         }
         
-        self.animation = SKAction.animate(with: textures, timePerFrame: TimeInterval(timePerFrame))
+        self.animation = SKAction.repeat(
+            SKAction.animate(with: textures,
+                             timePerFrame: TimeInterval(timePerFrame),
+                             resize: false,
+                             restore: true), count: 1)
     }
 }
