@@ -1,4 +1,7 @@
-#Ariadne...
+### PROJECT HAS MOVED TO A PRIVATE RESEARCH REPO. 
+### FOR MORE INFORMATION CONTACT SARAHKERRIGANMS OR KORRIBAN.
+
+Ariadne...
 
 *Mystic palm, gem and tarot*<br />
 *A few escape your magic arrow*<br />
